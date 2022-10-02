@@ -36,6 +36,7 @@ function generarCartas(cantidadCartas) {
   console.log("Entro en generarCartas!");
 }
 
+//Funcion para crear la carta
 function crearCarta() {
   //Se obtiene el contenedor de cartas
   let contenedorCartas = document.getElementById("cardsContainer");
