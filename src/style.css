@@ -1,1 +1,72 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap");
+
+* {
+  font-size: 10px;
+}
+
+body {
+  background: darkgreen;
+}
+
+.card-container {
+  height: 100vh;
+}
+
+.card {
+  background: #fff;
+  width: 250px;
+  height: 350px;
+}
+
+.card::after,
+.card::before {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.card::after {
+  top: 0;
+  left: 0;
+}
+
+.card::before {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.corazon::after,
+.corazon::before {
+  content: "\2665";
+}
+
+.picas::after,
+.picas::before {
+  content: "\2660";
+}
+
+.trebol::after,
+.trebol::before {
+  content: "\2663";
+}
+
+.diamante::after,
+.diamante::before {
+  content: "\2666";
+}
+
+.corazon,
+.diamante {
+  color: red;
+}
+
+.picas,
+.trebol {
+  color: black;
+}
+
+h1 {
+  font-size: 8rem;
+  font-family: "Frank Ruhl Libre", serif;
+}
